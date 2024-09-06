@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="payment.css">
+    <!-- Include Font Awesome for icons if needed -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Last step!</h2>
+        <div class="payment-options">
+            <div class="option">
+                <input type="radio" id="credit-card" name="payment-method">
+                <label for="credit-card">
+                    <i class="fas fa-credit-card"></i>
+                    Credit Card
+                </label>
+            </div>
+            <div class="option active">
+                <input type="radio" id="paypal" name="payment-method" checked>
+                <label for="paypal">
+                    <i class="fab fa-paypal"></i>
+                    PayPal
+                </label>
+            </div>
+        </div>
+        <div class="payment-summary">
+            <p>Your PayPal account will be charged <span>$899.</span></p>
+        </div>
+        <div class="paypal-buttons">
+            <button class="paypal-btn"><i class="fab fa-paypal"></i> PayPal</button>
+            <button class="credit-btn"><i class="fab fa-cc-paypal"></i> CREDIT</button>
+        </div>
+        <p class="payment-methods">Two easy ways to pay</p>
+        <p class="guarantee">You are protected by our 100% Money Back Guarantee. <br>
+        By completing your order on PayPal.com, you agree to our <a href="#">Terms & Conditions</a>.</p>
+        <div class="paypal-verified">
+            <img src="./Img/paypal logo.png" alt="PayPal Verified">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

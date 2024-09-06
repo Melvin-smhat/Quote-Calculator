@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="bookshipment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   
+    <div class="container1">
+    <header>
+        <img src="Img/MAIN-Car-Ship-N-Go-Logo-e1716984427281.png.webp" alt="Car Logo" class="logo">
+        <button class="contact-btn">Contact Us</button>
+    </header>
+    
+    <div class="progress-bar">
+        <div class="step active" data-step="Transport">
+            <i class="fas fa-truck"></i> <!-- Transport Icon -->
+        </div>
+        <div class="step-line active"></div>
+        <div class="step active" data-step="Pickup">
+            <i class="fas fa-box"></i> <!-- Pickup Icon -->
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="Delivery">
+            <i class="fas fa-shipping-fast"></i> <!-- Delivery Icon -->
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="BookShipment">
+            <i class="fas fa-clipboard-list"></i> <!-- Book Shipment Icon -->
+        </div>
+        <div class="step-line"></div>
+        <div class="step" data-step="ThankYou">
+            <i class="fas fa-check-circle"></i> <!-- Thank You Icon -->
+        </div>
+    </div>
+    </div>
+    
+    <div class="container">
+
+        <div class="payment-section">
+            <div class="payment-header">
+                <button class="payment-option active">Credit Card</button>
+                <button class="payment-option">PayPal</button>
+            </div>
+            <div class="payment-body">
+                <p class="amount-due">$0/Due Now</p>
+                <p class="secure-info">Your credit card will not be charged until the order is assigned to a carrier.</p>
+                <form class="payment-form">
+                    <div class="form-row">
+                        <input type="text" placeholder="Card Number">
+                        <input type="text" placeholder="Full Name On Card">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" placeholder="Expiration Date (MM/YY)">
+                        <input type="text" placeholder="Security Code (CVV)">
+                    </div>
+                    <div class="billing-address">
+                        <h4>Billing Address</h4>
+                        <label><input type="radio" name="address" checked> 15617 sw 61st ter Miami, FL 33193</label>
+                        <label><input type="radio" name="address"> 11820 Antebellum Drive Charlotte, NC 282723</label>
+                        <label><input type="radio" name="address"> Other Address</label>
+                    </div>
+                    <button class="book-shipment" id="payment">Book Shipment</button>
+                    <p class="terms">By clicking "Book shipment" you agree to Our <a href="#">Terms & Conditions</a></p>
+                </form>
+            </div>
+        </div>
+        <div class="details-section">
+            <h3>Details</h3>
+            <form class="details-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Distance" value="736mi">
+                    <input type="text" placeholder="First Avail Date" value="09/04/2024">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Vehicle" value="2018 Toyota Camry">
+                    <input type="text" placeholder="Ship From" value="Miami, FL 33193">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Ship To" value="Charlotte, NC 28273">
+                    <input type="text" placeholder="Vehicle Condition" value="Running">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Transport Type" value="Enclosed">
+                    <input type="text" placeholder="Services Type" value="Door to door">
+                </div>
+                <div class="form-row">
+                    <input type="text" placeholder="Insurance" value="Included">
+                    <input type="text" placeholder="Transit type" value="3-5 days">
+                </div>
+                <div class="price-info">
+                    <p>Due Now: <strong>$0</strong></p>
+                    <p>Regular Price: <strong>$1039</strong></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>

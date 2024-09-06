@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.payment-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;  /* Increased to make the container larger */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;  /* Increased margin for better spacing */
+    font-size: 32px;  /* Increased font size */
+    color: #333;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;  /* Increased margin for more space */
+}
+
+.option {
+    margin: 10px 10px;
+    flex: 1;
+    padding: 20px;  /* Increased padding for larger buttons */
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;  /* Slightly larger border-radius for more roundness */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;  /* Increased font size for text */
+}
+
+.option.active {
+    background-color: #009cde;
+    color: white;
+    border-color: #009cde;
+}
+
+.option i {
+    margin-right: 15px;  /* Increased margin */
+    font-size: 26px;  /* Increased icon size */
+}
+
+.payment-summary {
+    background-color: #f0f9ff;
+    padding: 20px;  /* Increased padding */
+    border: 1px solid #009cde;
+    border-radius: 8px;  /* Slightly larger border-radius */
+    margin-bottom: 30px;  /* Increased margin */
+    font-size: 20px;  /* Increased font size */
+}
+
+.payment-summary p {
+    margin: 0;
+    font-size: 20px;  /* Increased font size */
+    color: #333;
+}
+
+.payment-summary span {
+    font-weight: bold;
+}
+
+.paypal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.paypal-btn,
+.credit-btn {
+    width: 48%;
+    padding: 15px;  /* Increased padding for larger buttons */
+    border: none;
+    border-radius: 8px;  /* Slightly larger border-radius */
+    font-size: 20px;  /* Increased font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.paypal-btn {
+    background-color: #009cde;
+    color: white;
+}
+
+.credit-btn {
+    background-color: #002c8a;
+    color: white;
+}
+
+.payment-methods {
+    font-size: 18px;  /* Increased font size */
+    color: #666;
+    margin-bottom: 30px;  /* Increased margin */
+}
+
+.guarantee {
+    font-size: 16px;  /* Increased font size */
+    color: #666;
+    line-height: 1.5;
+}
+
+.guarantee a {
+    color: #009cde;
+    text-decoration: none;
+}
+
+.paypal-verified {
+    margin-top: 30px;  /* Increased margin */
+}
+
+.paypal-verified img {
+    width: 100px;  /* Increased image size */
+}

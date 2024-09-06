@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Quote UI</title>
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="Img/MAIN-Car-Ship-N-Go-Logo-e1716984427281.png.webp" alt="Car Logo" class="logo">
+            <button class="contact-btn">Contact Us</button>
+        </header>
+
+        <div class="main-content">
+            <div class="details-left">
+                <h2>Details</h2>
+                <!-- <p>Your quote has been e-mailed to you.</p> -->
+                <p>Ready to book? Hooray! NO PAYMENT REQUIRED to book your shipment.</p>
+                <p><strong>Services:</strong> Door To Door</p>
+                <p><strong>Insurance:</strong> Included</p>
+
+                <div class="price-options">
+                    <div class="price-option">
+                        <h3>Regular Price</h3>
+                        <p class="price">$1039</p>
+                        <p>Once the order is assigned to a carrier, one-time payment in full by using your credit card or debit card will be charged.</p>
+                    </div>
+                    <div class="price-option">
+                        <h3>Discount Cash Price</h3>
+                        <p class="price">$1019</p>
+                        <p>Once the order is assigned to a carrier, a partial payment will be charged, the balance will be due in cash on delivery.</p>
+                    </div>
+                </div>
+
+                <button class="continue-btn"><a style="text-decoration: none; color: white;" href="bookshipment.html"> Continue Booking Detail </a><i class="fa fa-arrow-right"></i></button>
+
+                <p class="note">Don’t know the exact day? That’s ok! You can change at any time. You will be still able to review your order.</p>
+                <p class="or-text">-OR-</p>
+                <p class="contact-info">Book with one of our friendly Customer Service Agents! <a href="tel:+18886668292">(888) 666-8292</a></p>
+            </div>
+
+            <div class="details-right">
+                <h2>Details</h2>
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="distance">Distance</label>
+                        <input type="text" id="distance" value="736mi">
+                    </div>
+                    <div class="input-group">
+                        <label for="vehicle">Vehicle</label>
+                        <input type="text" id="vehicle" value="2018 Toyota Camry">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="ship-to">Ship To</label>
+                        <input type="text" id="ship-to" value="Charlotte, NC 28273">
+                    </div>
+                    <div class="input-group">
+                        <label for="vehicle-condition">Vehicle Condition</label>
+                        <select id="vehicle-condition">
+                            <option value="running">Running</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="transport-type">Transport Type</label>
+                        <select id="transport-type">
+                            <option value="enclosed">Enclosed</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="services-type">Services Type</label>
+                        <select id="services-type">
+                            <option value="door-to-door">Door to Door</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <label for="insurance">Insurance</label>
+                        <input type="text" id="insurance" value="Included">
+                    </div>
+                    <div class="input-group">
+                        <label for="transit-type">Transit Type</label>
+                        <select id="transit-type">
+                            <option value="3-5-days">3-5 days</option>
+                        </select>
+                    </div>
+                </div>
+                
+
+                <div class="price-summary">
+                    <p>Due Now</p>
+                    <p class="price-now">$0</p>
+                    <p>Regular Price</p>
+                    <p class="price-regular">$1039</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews">
+            <h2>Read What Other Customers Say About Their Experience With Montway</h2>
+            <div class="review-cards">
+                <div class="review-card">
+                    <p class="review-text">Definitely five stars for this auto transport company! After enduring frustrating and lengthy delays with another carrier, I switched to Montway. They promptly picked up my car and delivery was earlier than expected.</p>
+                    <p class="reviewer">Bennett H. - January 14, 2024</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">Definitely five stars for this auto transport company! After enduring frustrating and lengthy delays with another carrier, I switched to Montway. They promptly picked up my car and delivery was earlier than expected.</p>
+                    <p class="reviewer">Gwen P - January 14, 2024</p>
+                </div>
+                <div class="review-card">
+                    <p class="review-text">Definitely five stars for this auto transport company! After enduring frustrating and lengthy delays with another carrier, I switched to Montway. They promptly picked up my car and delivery was earlier than expected.</p>
+                    <p class="reviewer">Sam W - January 14, 2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

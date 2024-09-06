@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Calculator</title>
+    <link rel="stylesheet" href="delivery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./Img/MAIN-Car-Ship-N-Go-Logo-e1716984427281.png.webp" alt="Logo" class="logo">
+            <button class="contact-btn">Contact Us</button>
+        </header>
+        
+        <div class="progress-bar">
+            <div class="step active" data-step="Transport">
+                <i class="fas fa-truck"></i> <!-- Transport Icon -->
+            </div>
+            <div class="step-line active"></div>
+            <div class="step active" data-step="Pickup">
+                <i class="fas fa-box"></i> <!-- Pickup Icon -->
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="Delivery">
+                <i class="fas fa-shipping-fast"></i> <!-- Delivery Icon -->
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="BookShipment">
+                <i class="fas fa-clipboard-list"></i> <!-- Book Shipment Icon -->
+            </div>
+            <div class="step-line"></div>
+            <div class="step" data-step="ThankYou">
+                <i class="fas fa-check-circle"></i> <!-- Thank You Icon -->
+            </div>
+        </div>
+        
+
+        <div class="form-container">
+            <form id="quoteForm" class="form-flex">
+                <div class="section" id="transportSection">
+                    <h2>Vehicle Delivery Detail</h2>
+
+                    <div class="input-group">
+                        <label for="fullName">Delivery Address</label>
+                        <input type="text" id="pickupAddress" name="pickupAddress" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="fullName">Apt,Suite,etc(Optional)</label>
+                        <input type="text" id="Apt" name="Apt" required>
+                    </div>
+                    <br>
+                    <hr>
+                   
+                    <div class="input-group">
+                        <label for="phoneNumber">This is a</label>
+                        <input type="tel" id="" name="" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="userType">Who do we contact about pickup?</label>
+                        <select id="userType" name="userType">
+                            <option value="individual">Contact me</option>
+                            <option value="company">A Company</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="next-btn" id="details">Delivery Info</button>
+                </div>
+
+                <div class="section details-section" id="detailsSection">
+                    <h2>Details</h2>
+
+                    <div class="input-group">
+                        <label for="distance">Distance</label>
+                        <input type="number" id="distance" name="distance" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="vehicle">Vehicle</label>
+                        <input type="text" id="vehicle" name="vehicle" placeholder="e.g., 2018 Toyota Camry" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="shipFrom">Ship From</label>
+                        <input type="text" id="shipFrom" name="shipFrom" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="shipTo">Ship To</label>
+                        <input type="text" id="shipTo" name="shipTo" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="transportType">Transport Type</label>
+                        <select id="transportType" name="transportType">
+                            <option value="open">Open</option>
+                            <option value="enclosed">Enclosed</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="vehicleCondition">Vehicle Condition</label>
+                        <select id="vehicleCondition" name="vehicleCondition">
+                            <option value="running">Running</option>
+                            <option value="inoperable">Inoperable</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="transitType">Transit Type</label>
+                        <select id="transitType" name="transitType">
+                            <option value="doorToDoor">Door to Door</option>
+                            <option value="terminalToTerminal">Terminal to Terminal</option>
+                        </select>
+                    </div>
+
+                    <div class="pricing">
+                        <div>
+                            <p>Due Now: <span id="dueNow">$0</span></p>
+                        </div>
+                        <div>
+                            <p>Regular Price: <span id="regularPrice">$0</span></p>
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
